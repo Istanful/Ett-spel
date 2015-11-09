@@ -1,0 +1,6 @@
+Standard impact01 = 0 0 10 10
+Standard impact02 = 11 0 10 10
+Standard impact03 = 0 11 10 10
+Standard impact04 = 11 11 10 10
+Standard impact05 = 22 0 10 10
+Standard impact06 = 22 11 10 10

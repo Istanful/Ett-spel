@@ -1,0 +1,8 @@
+Standard body death01 = 0 0 40 40
+Standard body death02 = 41 0 40 40
+Standard body death03 = 82 0 40 40
+Standard body death04 = 0 41 40 40
+Standard body death05 = 41 41 40 40
+Standard body death06 = 0 82 40 40
+Standard body death07 = 41 82 40 40
+Standard body death08 = 82 41 40 40
