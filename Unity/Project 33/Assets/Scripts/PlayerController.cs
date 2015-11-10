@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
 	void Update ()
 	{
 		if (canShoot && Input.GetMouseButtonDown (0)) {
-			GameObject spawnedBullet = (GameObject)Instantiate (bullet, (transform.position + new Vector3 (21, 10.5f)), transform.rotation);
+            GameObject spawnedBullet = (GameObject)Instantiate (bullet, (transform.position + new Vector3 (21, 10.5f)), transform.rotation);
 			spawnedBullet.transform.parent = transform;
 
 			canShoot = false;
@@ -40,6 +40,6 @@ public class PlayerController : MonoBehaviour
 
 	void OnCollisionEnter2D (Collision2D coll)
 	{
-		print ("OnCollisionEnter2D: " + coll);
+		print("OnCollisionEnter2D: " + coll);
 	}
 }
