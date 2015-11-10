@@ -1,2 +1,0 @@
-Naked man01 = 0 0 21 30
-Naked man02 = 22 0 21 30
