@@ -45,14 +45,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CameraController.cs" />
      <Compile Include="Assets\Scripts\Animation_SelfDestructOnEnd.cs" />
+     <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\EnemyController.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
+     <Compile Include="Assets\Scripts\LevelController.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <None Include="Assets\Sprites\Death animations\Standard body\Standard body death spritesheet.txt" />
      <None Include="Assets\Sprites\Impacts\Standard impact\Standard impact spritesheet.txt" />
-     <None Include="Assets\Sprites\Projectiles\Standard projectile\Standard projectile spritesheet.txt" />
      <None Include="Assets\Sprites\Characters\Naked man\Spritesheet.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
