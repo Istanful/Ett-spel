@@ -1,7 +1,7 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{ABD0B22F-B32F-16F2-A5B2-A0DF1858EAD7}") = "Project 33", "Assembly-CSharp.csproj", "{9B002229-6CC6-B022-692F-046FAA1E1FF1}"
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project 33.CSharp", "Project 33.CSharp.csproj", "{EF12AECB-D27D-CBD1-0360-DC52DF02B92D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,14 +9,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9B002229-6CC6-B022-692F-046FAA1E1FF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9B002229-6CC6-B022-692F-046FAA1E1FF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9B002229-6CC6-B022-692F-046FAA1E1FF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9B002229-6CC6-B022-692F-046FAA1E1FF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF12AECB-D27D-CBD1-0360-DC52DF02B92D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF12AECB-D27D-CBD1-0360-DC52DF02B92D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF12AECB-D27D-CBD1-0360-DC52DF02B92D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF12AECB-D27D-CBD1-0360-DC52DF02B92D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+<<<<<<< HEAD
 		GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
@@ -37,4 +38,6 @@ Global
 		$3.scope = text/plain
 	EndGlobalSection
 
+=======
+>>>>>>> refs/remotes/origin/master
 EndGlobal
