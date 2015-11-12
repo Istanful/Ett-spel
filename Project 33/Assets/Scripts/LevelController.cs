@@ -3,26 +3,33 @@ using System.Collections;
 
 public class LevelController : MonoBehaviour {
 
+    [Header("Enviroment objects.")]
     public GameObject background;
     public GameObject scenery;
     public GameObject ground;
 
-    public float backgroundMoveSpeed = 1;
-    public float sceneryMoveSpeed = 2;
-    public float groundMoveSpeed = 3;
+    [Header("Enviroment scrolling speeds.")]
+    public float backgroundScrollingSpeed = .1f;
+    public float sceneryScrollingSpeed = .2f;
+    public float groundScrollingSpeed = .3f;
 
-    Vector3 startPosition;
-    Vector3 endPosition;
-    float speed = 10.0f;
+    [Header("Enviroment start & end positions.")]
+    public Vector3 backgroundStartPos;
+    public Vector3 backgroundEndPos;
 
+    public Vector3 sceneryStartPos;
+    public Vector3 sceneryEndPos;
+
+    public Vector3 groundStartPos;
+    public Vector3 groundEndPos;
     
-
-    // Use this for initialization
     void Start () {
-	
-	}
+        
+    }
 
-	void Update () {
-        transform.position = Vector3.Lerp(startPosition, endPosition, speed * Time.deltaTime);
+	void FixedUpdate () {
+        background.transform.position = Vector3.Lerp(backgroundStartPos, backgroundEndPos, backgroundScrollingSpeed * Time.deltaTime);
+        scenery.transform.position = Vector3.Lerp(sceneryStartPos, sceneryEndPos, sceneryScrollingSpeed * Time.deltaTime);
+        ground.transform.position = Vector3.Lerp(groundStartPos, groundEndPos, groundScrollingSpeed * Time.deltaTime);
     }
 }
