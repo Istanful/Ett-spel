@@ -15,8 +15,8 @@ public class PlayerController : MonoBehaviour
 
 	void Update ()
 	{
-		if (canShoot && Input.GetMouseButtonDown (0)) {
-            GameObject spawnedBullet = (GameObject)Instantiate (bullet, (transform.position + new Vector3 (21, 10.5f)), transform.rotation);
+		if (canShoot && (Input.GetMouseButton (0) || Input.touchCount != 0)) {
+            GameObject spawnedBullet = (GameObject)Instantiate (bullet, (transform.position + bullet.transform.position), transform.rotation);
 			spawnedBullet.transform.parent = transform;
 
 			canShoot = false;

@@ -2,7 +2,10 @@
 
 public class EnemyController : MonoBehaviour
 {
+    public GameObject deathAnimationPrefab;
 	public float movementSpeed = 0.3f;
+    public int health = 2;
+    public int pointsWorth = 1;
 
 	void FixedUpdate ()
 	{
@@ -11,13 +14,19 @@ public class EnemyController : MonoBehaviour
 
 	void OnCollisionEnter2D (Collision2D coll)
 	{
-		print ("Collided with: " + coll);
+		print ("Collided with: " + coll.collider.name);
 		if (coll.gameObject.tag == "Player")
 			coll.gameObject.SendMessage ("Kill");
-
-		if (coll.gameObject.tag == "EnemyKiller") {
-			GameObject.Find ("GameController").SendMessage ("AddPoints", 1);
-			Destroy (gameObject);
-		}
 	}
+
+    void Damage(int damageTaken)
+    {
+        health -= damageTaken;
+        if (health <= 0)
+        {
+            GameObject.Find("GameController").SendMessage("AddPoints", pointsWorth);
+            Instantiate(deathAnimationPrefab, transform.position + (Vector3.left * 7), transform.rotation);
+            Destroy(gameObject);
+        }  
+    }
 }
