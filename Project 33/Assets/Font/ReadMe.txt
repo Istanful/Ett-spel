@@ -1,0 +1,1 @@
+Text storlek för att få bara pixlar är 7. :)
