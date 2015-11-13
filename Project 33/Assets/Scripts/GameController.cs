@@ -7,6 +7,11 @@ public class GameController : MonoBehaviour
     public GameObject pointsText;
 	public int points = 0;
 
+    public void RestartLevel()
+    {
+        Application.LoadLevel(Application.loadedLevel);
+    }
+
 	public void AddPoints (int newPoints)
 	{
 		points += newPoints;

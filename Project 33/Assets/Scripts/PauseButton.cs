@@ -15,7 +15,14 @@ public class PauseButton : MonoBehaviour {
         imageScript.sprite = pauseIcon;
     }
 
-
+    void OnApplicationFocus(bool focusStatus)
+    {
+        if (!focusStatus)
+        {
+            isPaused = false;
+            TogglePause();
+        }
+    }
 
     public void TogglePause()
     {
