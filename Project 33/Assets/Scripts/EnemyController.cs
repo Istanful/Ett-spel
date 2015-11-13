@@ -1,14 +1,12 @@
 ﻿using UnityEngine;
-using System.Collections;
-using System.Threading;
 
 public class EnemyController : MonoBehaviour
 {
-	public float movementSpeed = -0.5f;
+	public float movementSpeed = 0.3f;
 
 	void FixedUpdate ()
 	{
-		transform.Translate (new Vector3 (movementSpeed, 0, 0));
+		transform.Translate (new Vector3 (-movementSpeed - 0.6f, 0, 0));
 	}
 
 	void OnCollisionEnter2D (Collision2D coll)

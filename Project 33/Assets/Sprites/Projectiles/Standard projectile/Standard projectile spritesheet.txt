@@ -1,9 +1,0 @@
-Standard projectile01 = 0 0 115 1
-Standard projectile02 = 0 2 115 1
-Standard projectile03 = 0 4 115 1
-Standard projectile04 = 0 6 115 1
-Standard projectile05 = 0 8 115 1
-Standard projectile06 = 0 10 115 1
-Standard projectile07 = 0 12 115 1
-Standard projectile08 = 0 14 115 1
-Standard projectile09 = 0 16 115 1
