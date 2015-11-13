@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class LevelController : MonoBehaviour {
 
@@ -9,27 +8,25 @@ public class LevelController : MonoBehaviour {
     public GameObject ground;
 
     [Header("Enviroment scrolling speeds.")]
-    public float backgroundScrollingSpeed = .1f;
-    public float sceneryScrollingSpeed = .2f;
-    public float groundScrollingSpeed = .3f;
+    public int backgroundScrollingSpeed = 10;
+    public int sceneryScrollingSpeed = 20;
+    public int groundScrollingSpeed = 30;
 
-    [Header("Enviroment start & end positions.")]
-    public Vector3 backgroundStartPos;
-    public Vector3 backgroundEndPos;
+    Vector3 backgroundScrollingVelocity;
+    Vector3 sceneryScrollingVelocity;
+    Vector3 groundScrollingVelocity;
 
-    public Vector3 sceneryStartPos;
-    public Vector3 sceneryEndPos;
-
-    public Vector3 groundStartPos;
-    public Vector3 groundEndPos;
-    
-    void Start () {
-        
+    public void Update()
+    {
+        background.transform.position -= backgroundScrollingVelocity * Time.deltaTime;
+        scenery.transform.position -= sceneryScrollingVelocity * Time.deltaTime;
+        ground.transform.position -= groundScrollingVelocity * Time.deltaTime;
     }
 
-	void FixedUpdate () {
-        background.transform.position = Vector3.Lerp(backgroundStartPos, backgroundEndPos, backgroundScrollingSpeed * Time.deltaTime);
-        scenery.transform.position = Vector3.Lerp(sceneryStartPos, sceneryEndPos, sceneryScrollingSpeed * Time.deltaTime);
-        ground.transform.position = Vector3.Lerp(groundStartPos, groundEndPos, groundScrollingSpeed * Time.deltaTime);
+    void Start ()
+    {
+        backgroundScrollingVelocity = new Vector3(backgroundScrollingSpeed, 0);
+        sceneryScrollingVelocity = new Vector3(sceneryScrollingSpeed, 0);
+        groundScrollingVelocity = new Vector3(groundScrollingSpeed, 0);
     }
 }
