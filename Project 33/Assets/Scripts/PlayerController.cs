@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Threading;
 
@@ -8,14 +9,9 @@ public class PlayerController : MonoBehaviour
 	public int weaponCooldown = 1000;
 	private bool canShoot = true;
 
-	void Start ()
-	{
-	
-	}
-
 	void Update ()
 	{
-		if (canShoot && (Input.GetMouseButton (0) || Input.touchCount != 0)) {
+		if (!UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject() && canShoot && (Time.timeScale != 0) && (Input.GetMouseButton (0) || Input.touchCount != 0)) {
             GameObject spawnedBullet = (GameObject)Instantiate (bullet, (transform.position + bullet.transform.position), transform.rotation);
 			spawnedBullet.transform.parent = transform;
 

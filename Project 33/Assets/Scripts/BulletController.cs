@@ -16,11 +16,16 @@ public class BulletController : MonoBehaviour {
         transform.position += bulletVelocity * Time.deltaTime;
     }
 
+    void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
+
     void OnCollisionEnter2D(Collision2D coll)
     {
-        print(GetComponent<Collider2D>().name + " collided with " + coll.collider.name);
-        if (coll.gameObject.tag != "Player")
+        if ((coll.gameObject.tag != "Player") && (coll.gameObject.tag != "EnemyKiller"))
         {
+            print(GetComponent<Collider2D>().name + " collided with " + coll.collider.name);
             if (coll.gameObject.tag == "Enemy")
                 coll.gameObject.SendMessage("Damage", bulletDamage);
 

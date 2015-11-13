@@ -1,16 +1,17 @@
 fileFormatVersion: 2
-guid: cdc7af4ac82eaa64a94abe43ca31cf8e
-timeCreated: 1447412666
+guid: 8b448a895047c5d4db8b0f3f75df2603
+timeCreated: 1447427301
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Standard impact spritesheet_0
-    21300002: Standard impact spritesheet_1
-    21300004: Standard impact spritesheet_2
-    21300006: Standard impact spritesheet_3
-    21300008: Standard impact spritesheet_4
-    21300010: Standard impact spritesheet_5
-    21300012: Standard impact spritesheet_6
+    21300000: Icons_0
+    21300002: Icons_1
+    21300004: Icons_2
+    21300006: Icons_3
+    21300008: Icons_4
+    21300010: Icons_5
+    21300012: Icons_6
+    21300014: Icons_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -43,89 +44,99 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
-  compressionQuality: -1
+  compressionQuality: 50
   allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 6
+  alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 1
+  spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Standard impact spritesheet_0
+    - name: Icons_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 21
-        width: 10
-        height: 10
+        y: 45
+        width: 15
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Standard impact spritesheet_1
+    - name: Icons_1
       rect:
         serializedVersion: 2
-        x: 11
-        y: 21
-        width: 10
-        height: 10
+        x: 15
+        y: 45
+        width: 15
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Standard impact spritesheet_2
+    - name: Icons_2
       rect:
         serializedVersion: 2
-        x: 22
-        y: 21
-        width: 10
-        height: 10
+        x: 30
+        y: 45
+        width: 15
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Standard impact spritesheet_3
+    - name: Icons_3
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 45
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Icons_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 11
-        width: 10
-        height: 10
+        y: 30
+        width: 15
+        height: 15
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Standard impact spritesheet_4
+    - name: Icons_5
       rect:
         serializedVersion: 2
-        x: 11
-        y: 11
-        width: 10
-        height: 10
+        x: 15
+        y: 30
+        width: 15
+        height: 15
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Standard impact spritesheet_5
+    - name: Icons_6
       rect:
         serializedVersion: 2
-        x: 22
-        y: 11
-        width: 10
-        height: 10
+        x: 30
+        y: 30
+        width: 15
+        height: 15
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Standard impact spritesheet_6
+    - name: Icons_7
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1
-        width: 10
-        height: 10
+        x: 45
+        y: 30
+        width: 15
+        height: 15
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

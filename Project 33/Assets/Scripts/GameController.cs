@@ -13,7 +13,7 @@ public class GameController : MonoBehaviour
         pointsText.GetComponent<Text>().text = "Points: " + points;
     }
 
-	public void PlayerDied ()
+    public void PlayerDied ()
 	{
 
 	}
