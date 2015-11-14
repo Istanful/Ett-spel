@@ -5,26 +5,92 @@ using System.Threading;
 
 public class PlayerController : MonoBehaviour
 {
-	public GameObject bullet;
-	public int weaponCooldown = 1000;
-	private bool canShoot = true;
+    public Abilities abilities;
 
-	void Update ()
+    void Start ()
+    {
+        InvokeRepeating("LowerCooldowns", 0, 0.1f);
+    }
+
+    void Update ()
 	{
-		if (!UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject() && canShoot && (Time.timeScale != 0) && (Input.GetMouseButton (0) || Input.touchCount != 0)) {
-            GameObject spawnedBullet = (GameObject)Instantiate (bullet, (transform.position + bullet.transform.position), transform.rotation);
-			spawnedBullet.transform.parent = transform;
+        UseAbility(abilities.Basic);
 
-			canShoot = false;
-			new Timer (delegate {
-				canShoot = true;
-			}, null, weaponCooldown, 0);
+        if (!UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject () && (Time.timeScale != 0))
+        {
+            switch (SwipeController.swipeDirection)
+            {
+                case Swipe.FrontUp:
+                    UseAbility(abilities.FrontUp);
+                    break;
+                case Swipe.Front:
+                    UseAbility(abilities.Front);
+                    break;
+                case Swipe.FrontDown:
+                    UseAbility(abilities.FrontDown);
+                    break;
+
+                case Swipe.BackUp:
+                    UseAbility(abilities.BackUp);
+                    break;
+                case Swipe.BackDown:
+                    UseAbility(abilities.BackDown);
+                    break;
+            }
 		}
 	}
 
-	public void Kill ()
-	{
-		GameObject.Find ("GameController").SendMessage ("PlayerDied");
-		Destroy (gameObject);
-	}
+    public void Die ()
+    {
+        GameObject.Find("GameController").SendMessage("PlayerDied");
+        Destroy(gameObject);
+    }
+    void LowerCooldowns()
+    {
+        if (abilities.Basic.currentCooldown > 0)
+            abilities.Basic.currentCooldown -= 1;
+
+        if (abilities.FrontUp.currentCooldown > 0)
+            abilities.FrontUp.currentCooldown -= 1;
+        if (abilities.Front.currentCooldown > 0)
+            abilities.Front.currentCooldown -= 1;
+        if (abilities.FrontDown.currentCooldown > 0)
+            abilities.FrontDown.currentCooldown -= 1;
+
+        if (abilities.BackUp.currentCooldown > 0)
+            abilities.BackUp.currentCooldown -= 1;
+        if (abilities.BackDown.currentCooldown > 0)
+            abilities.BackDown.currentCooldown -= 1;
+    }
+
+    void UseAbility(Ability usedAbility)
+    {
+        if (usedAbility.currentCooldown == 0)
+        {
+            ((GameObject)Instantiate(usedAbility.spawnedObject, (transform.position + usedAbility.spawnedObject.transform.position), transform.rotation)).transform.parent = transform;
+            usedAbility.currentCooldown = usedAbility.maxCooldown;
+        }
+    }
+
+    [System.Serializable]
+    public class Ability
+    {
+        public GameObject spawnedObject;
+        public int maxCooldown;
+
+        public int currentCooldown = 0;
+    }
+
+    [System.Serializable]
+    public class Abilities
+    {
+        public Ability Basic;
+
+        public Ability FrontUp;
+        public Ability Front;
+        public Ability FrontDown;
+
+        public Ability BackUp;
+        public Ability BackDown;
+    }
 }

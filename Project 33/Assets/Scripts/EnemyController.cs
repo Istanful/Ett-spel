@@ -23,9 +23,8 @@ public class EnemyController : MonoBehaviour
 
 	void OnCollisionEnter2D (Collision2D coll)
 	{
-		print ("Collided with: " + coll.collider.name);
 		if (coll.gameObject.tag == "Player")
-			coll.gameObject.SendMessage ("Kill");
+			coll.gameObject.SendMessage ("Die");
 	}
 
     void Damage(int damageTaken)
