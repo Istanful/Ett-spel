@@ -14,31 +14,34 @@ public class PlayerController : MonoBehaviour
 
     void Update ()
 	{
-        UseAbility(abilities.Basic);
-
         if (!UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject () && (Time.timeScale != 0))
         {
-            switch (SwipeController.swipeDirection)
+            if (Input.touchCount > 0 || Input.GetMouseButton(0))
             {
-                case Swipe.FrontUp:
-                    UseAbility(abilities.FrontUp);
-                    break;
-                case Swipe.Front:
-                    UseAbility(abilities.Front);
-                    break;
-                case Swipe.FrontDown:
-                    UseAbility(abilities.FrontDown);
-                    break;
-
-                case Swipe.BackUp:
-                    UseAbility(abilities.BackUp);
-                    break;
-                case Swipe.BackDown:
-                    UseAbility(abilities.BackDown);
-                    break;
+                UseAbility(abilities.Basic);
             }
 		}
-	}
+
+        switch (SwipeController.swipeDirection)
+        {
+            case Swipe.FrontUp:
+                UseAbility(abilities.FrontUp);
+                break;
+            case Swipe.Front:
+                UseAbility(abilities.Front);
+                break;
+            case Swipe.FrontDown:
+                UseAbility(abilities.FrontDown);
+                break;
+
+            case Swipe.BackUp:
+                UseAbility(abilities.BackUp);
+                break;
+            case Swipe.BackDown:
+                UseAbility(abilities.BackDown);
+                break;
+        }
+    }
 
     public void Die ()
     {

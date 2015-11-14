@@ -60,6 +60,7 @@
      <None Include="Assets\Sprites\Combat\Shields\Shields up.txt" />
      <None Include="Assets\Sprites\Death animations\Standard body\Standard body death spritesheet.txt" />
      <None Include="Assets\Sprites\Impacts\Standard impact\Standard impact spritesheet.txt" />
+     <None Include="Assets\Sprites\Combat\Health bars\Zombie health bar.txt" />
      <None Include="Assets\Font\ReadMe.txt" />
      <None Include="Assets\Sprites\Characters\Naked man\Spritesheet.txt" />
      <None Include="Assets\Sprites\Combat\Shields\Shields down.txt" />
