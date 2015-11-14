@@ -25,7 +25,6 @@ public class BulletController : MonoBehaviour {
     {
         if ((coll.gameObject.tag != "Player") && (coll.gameObject.tag != "EnemyKiller"))
         {
-            print(GetComponent<Collider2D>().name + " collided with " + coll.collider.name);
             if (coll.gameObject.tag == "Enemy")
                 coll.gameObject.SendMessage("Damage", bulletDamage);
 
