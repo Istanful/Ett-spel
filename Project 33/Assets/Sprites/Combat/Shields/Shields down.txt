@@ -1,6 +1,6 @@
-Shield down01 = 0 0 15 15
-Shield down02 = 16 0 15 15
-Shield down03 = 0 16 15 15
-Shield down04 = 16 16 15 15
-Shield down05 = 32 0 15 15
-Shield down06 = 32 16 15 15
+Shield down01 = 0 0 22 24
+Shield down02 = 23 0 22 24
+Shield down03 = 0 25 22 24
+Shield down04 = 23 25 22 24
+Shield down05 = 46 0 22 24
+Shield down06 = 69 0 22 24
