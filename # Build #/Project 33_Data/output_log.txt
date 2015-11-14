@@ -1,0 +1,67 @@
+Mono path[0] = 'C:/Users/bookw/Documents/# GitHub #/Ett-spel/# Build #/Project 33_Data/Managed'
+Mono path[1] = 'C:/Users/bookw/Documents/# GitHub #/Ett-spel/# Build #/Project 33_Data/Mono'
+Mono config path = 'C:/Users/bookw/Documents/# GitHub #/Ett-spel/# Build #/Project 33_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/bookw/Documents/# GitHub #/Ett-spel/# Build #/Project 33_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55041
+Multi-casting "[IP] 192.168.1.192 [Port] 55041 [Flags] 2 [Guid] 556624544 [EditorId] 2195672062 [Version] 1048832 [Id] WindowsPlayer(DESKTOP-E869HKT) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [192.168.1.192:55041]
+Initialize engine version: 5.2.2f1 (3757309da7e7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 660   (ID=0x11c0)
+    Vendor:   NVIDIA
+    VRAM:     1989 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\bookw\Documents\# GitHub #\Ett-spel\# Build #\Project 33_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\bookw\Documents\# GitHub #\Ett-spel\# Build #\Project 33_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\bookw\Documents\# GitHub #\Ett-spel\# Build #\Project 33_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\bookw\Documents\# GitHub #\Ett-spel\# Build #\Project 33_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\bookw\Documents\# GitHub #\Ett-spel\# Build #\Project 33_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\bookw\Documents\# GitHub #\Ett-spel\# Build #\Project 33_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\bookw\Documents\# GitHub #\Ett-spel\# Build #\Project 33_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\bookw\Documents\# GitHub #\Ett-spel\# Build #\Project 33_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\bookw\Documents\# GitHub #\Ett-spel\# Build #\Project 33_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.076 seconds
+desktop: 1920x1080 60Hz; virtual: 3286x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\bookw\Documents\# GitHub #\Ett-spel\# Build #\Project 33_Data\Managed\System.dll (this message is harmless)
+The referenced script on this Behaviour is missing!
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Mono/MonoBehaviour.cpp Line: 1649)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Mono/MonoBehaviour.cpp Line: 1649)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 2648 -> priority: 1 
+The referenced script on this Behaviour is missing!
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineObjectBindings.gen.cs:60)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:80)
+BulletController:OnCollisionEnter2D(Collision2D) (at C:\Users\bookw\Documents\# GitHub #\Ett-spel\Project 33\Assets\Scripts\BulletController.cs:31)
+
+[C:/buildslave/unity/build/Runtime/Mono/MonoBehaviour.cpp line 1649] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineObjectBindings.gen.cs Line: 60)
+
+The referenced script on this Behaviour is missing!
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineObjectBindings.gen.cs:60)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:80)
+BulletController:OnCollisionEnter2D(Collision2D) (at C:\Users\bookw\Documents\# GitHub #\Ett-spel\Project 33\Assets\Scripts\BulletController.cs:31)
+
+[C:/buildslave/unity/build/Runtime/Mono/MonoBehaviour.cpp line 1649] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineObjectBindings.gen.cs Line: 60)
+
+The referenced script on this Behaviour is missing!
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineObjectBindings.gen.cs:60)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:80)
+BulletController:OnCollisionEnter2D(Collision2D) (at C:\Users\bookw\Documents\# GitHub #\Ett-spel\Project 33\Assets\Scripts\BulletController.cs:31)
+
+[C:/buildslave/unity/build/Runtime/Mono/MonoBehaviour.cpp line 1649] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineObjectBindings.gen.cs Line: 60)
+
