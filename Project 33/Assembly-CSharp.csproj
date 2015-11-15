@@ -45,6 +45,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Depression.cs" />
      <Compile Include="Assets\Melvin.cs" />
      <Compile Include="Assets\Scripts\Controllers\Bullet.cs" />
      <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />
@@ -64,11 +65,15 @@
      <None Include="Assets\Sprites\Combat\Shields\Up shield impact.txt" />
      <None Include="Assets\Sprites\Death animations\Standard body\Standard body death spritesheet.txt" />
      <None Include="Assets\Sprites\Combat\M.E.L.V.I.N\Rocket.txt" />
+     <None Include="Assets\Sprites\Characters\Giant watcher\Giant watcher.txt" />
+     <None Include="Assets\Sprites\Characters\Zombie\Zombie spritesheet.txt" />
      <None Include="Assets\Sprites\Impacts\Standard impact\Standard impact spritesheet.txt" />
      <None Include="Assets\Sprites\Combat\Health bars\Zombie health bar.txt" />
      <None Include="Assets\Font\ReadMe.txt" />
      <None Include="Assets\Sprites\Combat\M.E.L.V.I.N\Idle.txt" />
      <None Include="Assets\Sprites\Characters\Naked man\Spritesheet.txt" />
+     <None Include="Assets\Sprites\Impacts\Rocket impact\Rocket impact.txt" />
+     <None Include="Assets\Sprites\Combat\M.E.L.V.I.N\Shield up.txt" />
      <None Include="Assets\Sprites\Combat\Shields\Shields down.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

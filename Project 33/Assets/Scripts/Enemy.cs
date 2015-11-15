@@ -23,7 +23,7 @@ public class Enemy : MonoBehaviour
 	void FixedUpdate ()
 	{
         if (rb.velocity.magnitude < movementSpeed)
-            rb.AddForce(Vector2.left, ForceMode2D.Impulse);
+            rb.AddForce(Vector2.left * (rb.mass/2), ForceMode2D.Impulse);
         else if (rb.velocity.magnitude > movementSpeed)
         {
             Debug.Log("Movement speed exceeds maximum: " + rb.velocity.magnitude);
@@ -47,12 +47,6 @@ public class Enemy : MonoBehaviour
 
             Instantiate(deathAnimationPrefab, transform.position + (Vector3.left * 7), transform.rotation);
             Destroy(gameObject);
-        }  
-    }
-
-    void KnockedBack(float strength)
-    {
-        Debug.Log(transform.name + " got knocked back.");
-        GetComponent<Rigidbody2D>().AddForce(Vector3.right * strength, ForceMode2D.Impulse);
+        }
     }
 }

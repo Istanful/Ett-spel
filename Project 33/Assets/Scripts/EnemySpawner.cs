@@ -4,8 +4,7 @@ using System.Collections.Generic;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public float minTimeBetweenSpawns = 5.0f;
-    public float maxTimeBetweenSpawns = 15.0f;
+    public float randomTimeBetweenSpawns = 1;
     [SerializeField]
     public List<SpawnableEnemy> enemies;
 
@@ -21,8 +20,6 @@ public class EnemySpawner : MonoBehaviour
 
     void Update()
     {
-
-
         if (spawnReady)
         {
             StartCoroutine(SpawnEnemy());
@@ -34,9 +31,15 @@ public class EnemySpawner : MonoBehaviour
     {
         int enemyIndex = Random.Range(0, enemies.Count);
         if (Random.Range(0, enemies[enemyIndex].rarity) == 0)
+        {
             Instantiate(enemies[enemyIndex].enemy, transform.position, transform.rotation);
-
-        yield return new WaitForSeconds(Random.Range(minTimeBetweenSpawns, maxTimeBetweenSpawns));
+            yield return new WaitForSeconds(Random.Range(0, randomTimeBetweenSpawns) + enemies[enemyIndex].delayAfterSpawn);
+        }
+        else
+        {
+            Debug.Log("Spawning of " + enemies[enemyIndex].enemy.name + " failed. Redoing spawn.");
+            yield return new WaitForSeconds(0.01f);
+        }
         spawnReady = true;
     }
 
@@ -44,6 +47,7 @@ public class EnemySpawner : MonoBehaviour
     public class SpawnableEnemy
     {
         public GameObject enemy;
-        public int rarity = 5;
+        public int rarity = 0;
+        public float delayAfterSpawn = 0;
     }
 }

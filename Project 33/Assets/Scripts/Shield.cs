@@ -4,12 +4,17 @@ using System.Collections;
 public class Shield : MonoBehaviour
 {
     public int health = 2;
-    public float knockback = 2;
-    public float despawnTime = 0.5f;
+    public float movementSpeed = 1;
+    public float despawnTime = 0.125f;
 
     void Start () {
         Invoke("Despawn", despawnTime);
-	}
+    }
+
+    void FixedUpdate()
+    {
+        transform.position += Vector3.right * movementSpeed;
+    }
 
     void Damage (int damageTaken)
     {
@@ -23,13 +28,6 @@ public class Shield : MonoBehaviour
     void Despawn ()
     {
         GetComponent<Animator>().Play("Reversed");
-        Destroy(GetComponent<BoxCollider2D>());
-        Destroy(gameObject, 1);
-    }
-
-    void OnCollisionEnter2D(Collision2D coll)
-    {
-        if (coll.gameObject.tag == "Enemy")
-            coll.gameObject.SendMessage("KnockedBack", knockback);
+        Destroy(gameObject, 0.5f);
     }
 }
