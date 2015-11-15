@@ -23,7 +23,7 @@ public class Bullet : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if ((coll.gameObject.tag != "Player") && (coll.gameObject.tag != "EnemyKiller"))
+        if ((coll.gameObject.tag != "Player") && (coll.gameObject.tag != "Ability") && (coll.gameObject.tag != "Companion"))
         {
             if (coll.gameObject.tag == "Enemy")
                 coll.gameObject.SendMessage("Damage", bulletDamage);

@@ -71,7 +71,7 @@ public class PlayerController : MonoBehaviour
     {
         if (usedAbility.currentCooldown == 0)
         {
-            ((GameObject)Instantiate(usedAbility.spawnedObject, (transform.position + usedAbility.spawnedObject.transform.position), transform.rotation)).transform.parent = transform;
+            Instantiate(usedAbility.spawnedObject, (transform.position + usedAbility.spawnedObject.transform.position), transform.rotation);
             usedAbility.currentCooldown = usedAbility.maxCooldown;
             Debug.Log("Used ability: " + usedAbility.spawnedObject.name);
         }

@@ -11,8 +11,18 @@ public class EnemySpawner : MonoBehaviour
 
     bool spawnReady = true;
 
+    void Start()
+    {
+        Vector3 newPosition = Camera.main.ScreenToWorldPoint(new Vector3(Camera.main.pixelWidth, 0));
+        newPosition.y = 23;
+        newPosition.z = 0;
+        transform.position = newPosition;
+    }
+
     void Update()
     {
+
+
         if (spawnReady)
         {
             StartCoroutine(SpawnEnemy());

@@ -14,10 +14,17 @@ public class SwipeController : MonoBehaviour
 
     Vector2 lastPos;
 
-    public static Swipe swipeDirection;
+    static Swipe _swipeDirection;
+
+    public static Swipe swipeDirection {
+        get {
+            Swipe direction = _swipeDirection;
+            _swipeDirection = Swipe.None;
+            return direction;
+        }
+    }
 
     public float swipeRegisterTime = 0.1f;
-    public float swipeResetTime = 0.3f;
 
     void Update()
     {
@@ -54,15 +61,15 @@ public class SwipeController : MonoBehaviour
         }
         else
         {
-            swipeDirection = Swipe.Tap;
-            Debug.Log("Direction: " + swipeDirection + " <color=gray>(Angle: 0°)</color>");
+            _swipeDirection = Swipe.Tap;
+            Debug.Log("Direction: " + _swipeDirection + " <color=gray>(Angle: 0°)</color>");
             return;
         }
 
         if (currentSwipe.magnitude < minSwipeLength)
         {
-            swipeDirection = Swipe.Tap;
-            Debug.Log("Direction: " + swipeDirection + " <color=gray>(Angle: 0°)</color>");
+            _swipeDirection = Swipe.Tap;
+            Debug.Log("Direction: " + _swipeDirection + " <color=gray>(Angle: 0°)</color>");
             return;
         }
 
@@ -74,22 +81,16 @@ public class SwipeController : MonoBehaviour
             angle = angle * -1;
 
         if (angle >= 30 && angle <= 80)
-            swipeDirection = Swipe.FrontUp;
+            _swipeDirection = Swipe.FrontUp;
         else if (angle >= -30 && angle <= 30)
-            swipeDirection = Swipe.Front;
+            _swipeDirection = Swipe.Front;
         else if (angle >= -80 && angle <= -30)
-            swipeDirection = Swipe.FrontDown;
+            _swipeDirection = Swipe.FrontDown;
         else if (angle >= 80 && angle <= 180)
-            swipeDirection = Swipe.BackUp;
+            _swipeDirection = Swipe.BackUp;
         else if (angle >= -180 && angle <= -80)
-            swipeDirection = Swipe.BackDown;
+            _swipeDirection = Swipe.BackDown;
 
-        Debug.Log("Direction: " + swipeDirection + " <color=gray>(Angle: " + Mathf.RoundToInt(angle) + "°)</color>");
-        Invoke("ResetSwipe", swipeResetTime);
-    }
-
-    void ResetSwipe()
-    {
-        swipeDirection = Swipe.None;
+        Debug.Log("Direction: " + _swipeDirection + " <color=gray>(Angle: " + Mathf.RoundToInt(angle) + "°)</color>");
     }
 }
