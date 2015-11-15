@@ -48,6 +48,7 @@ public class PlayerController : MonoBehaviour
         GameObject.Find("GameController").SendMessage("PlayerDied");
         Destroy(gameObject);
     }
+
     void LowerCooldowns()
     {
         if (abilities.Basic.currentCooldown > 0)
@@ -72,6 +73,7 @@ public class PlayerController : MonoBehaviour
         {
             ((GameObject)Instantiate(usedAbility.spawnedObject, (transform.position + usedAbility.spawnedObject.transform.position), transform.rotation)).transform.parent = transform;
             usedAbility.currentCooldown = usedAbility.maxCooldown;
+            Debug.Log("Used ability: " + usedAbility.spawnedObject.name);
         }
     }
 
