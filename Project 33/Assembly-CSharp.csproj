@@ -45,23 +45,27 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\PitchRandomizer.cs" />
-     <Compile Include="Assets\Scripts\BulletController.cs" />
-     <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Melvin.cs" />
+     <Compile Include="Assets\Scripts\Controllers\Bullet.cs" />
+     <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\GameController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\LevelController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\SwipeController.cs" />
      <Compile Include="Assets\Scripts\DestroyAfterTime.cs" />
-     <Compile Include="Assets\Scripts\EnemyController.cs" />
+     <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\EnemySpawner.cs" />
-     <Compile Include="Assets\Scripts\GameController.cs" />
-     <Compile Include="Assets\Scripts\LevelController.cs" />
      <Compile Include="Assets\Scripts\PauseButton.cs" />
-     <Compile Include="Assets\Scripts\PlayerController.cs" />
-     <Compile Include="Assets\ShieldController.cs" />
-     <Compile Include="Assets\SwipeController.cs" />
+     <Compile Include="Assets\Scripts\PitchRandomizer.cs" />
+     <Compile Include="Assets\Scripts\Shield.cs" />
+     <None Include="Assets\Sprites\Combat\Shields\Down shield impact.txt" />
      <None Include="Assets\Sprites\Combat\Shields\Shields up.txt" />
+     <None Include="Assets\Sprites\Combat\Shields\Up shield impact.txt" />
      <None Include="Assets\Sprites\Death animations\Standard body\Standard body death spritesheet.txt" />
      <None Include="Assets\Sprites\Impacts\Standard impact\Standard impact spritesheet.txt" />
      <None Include="Assets\Sprites\Combat\Health bars\Zombie health bar.txt" />
      <None Include="Assets\Font\ReadMe.txt" />
+     <None Include="Assets\Sprites\Combat\M.E.L.V.I.N\Idle.txt" />
      <None Include="Assets\Sprites\Characters\Naked man\Spritesheet.txt" />
      <None Include="Assets\Sprites\Combat\Shields\Shields down.txt" />
  <Reference Include="UnityEngine.UI">

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class EnemyController : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     public GameObject deathAnimationPrefab;
 	public float movementSpeed = 0.3f;

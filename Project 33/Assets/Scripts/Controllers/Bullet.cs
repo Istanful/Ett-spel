@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BulletController : MonoBehaviour {
+public class Bullet : MonoBehaviour {
     public int bulletSpeed = 50;
     public int bulletDamage = 1;
     public GameObject hitAnimation;

@@ -12,14 +12,11 @@ public class SwipeController : MonoBehaviour
     Vector2 firstClickPos;
     Vector2 secondClickPos;
 
+    Vector2 lastPos;
+
     public static Swipe swipeDirection;
 
     void Update()
-    {
-        DetectSwipe();
-    }
-
-    public void DetectSwipe()
     {
         if (Input.touches.Length > 0)
         {
@@ -28,6 +25,7 @@ public class SwipeController : MonoBehaviour
             if (t.phase == TouchPhase.Began)
             {
                 firstPressPos = new Vector2(t.position.x, t.position.y);
+                lastPos = firstPressPos;
             }
 
             if (t.phase == TouchPhase.Ended)
@@ -42,7 +40,7 @@ public class SwipeController : MonoBehaviour
                 }
 
                 currentSwipe.Normalize();
-                
+
                 float angle = Vector3.Angle(Vector3.right, currentSwipe);
 
                 if (currentSwipe.y < 0)
@@ -77,7 +75,7 @@ public class SwipeController : MonoBehaviour
             {
                 secondClickPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
                 currentSwipe = new Vector3(secondClickPos.x - firstClickPos.x, secondClickPos.y - firstClickPos.y);
-                
+
                 if (currentSwipe.magnitude < minSwipeLength)
                 {
                     swipeDirection = Swipe.Tap;
@@ -102,7 +100,7 @@ public class SwipeController : MonoBehaviour
                     swipeDirection = Swipe.BackUp;
                 else if (angle >= -180 && angle <= -80)
                     swipeDirection = Swipe.BackDown;
-                
+
                 Debug.Log("Direction: " + swipeDirection + " <color=white>(Angle: " + Mathf.RoundToInt(angle) + "°)</color>");
             }
         }

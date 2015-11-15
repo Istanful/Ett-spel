@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ShieldController : MonoBehaviour
+public class Shield : MonoBehaviour
 {
     public int health = 2;
 
