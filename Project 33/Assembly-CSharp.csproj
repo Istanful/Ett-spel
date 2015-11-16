@@ -45,17 +45,18 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Depression.cs" />
-     <Compile Include="Assets\Melvin.cs" />
+     <Compile Include="Assets\LoadLevel.cs" />
      <Compile Include="Assets\Scripts\Controllers\Bullet.cs" />
      <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />
      <Compile Include="Assets\Scripts\Controllers\GameController.cs" />
      <Compile Include="Assets\Scripts\Controllers\LevelController.cs" />
      <Compile Include="Assets\Scripts\Controllers\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Controllers\SwipeController.cs" />
+     <Compile Include="Assets\Scripts\Depression.cs" />
      <Compile Include="Assets\Scripts\DestroyAfterTime.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\EnemySpawner.cs" />
+     <Compile Include="Assets\Scripts\Melvin.cs" />
      <Compile Include="Assets\Scripts\PauseButton.cs" />
      <Compile Include="Assets\Scripts\PitchRandomizer.cs" />
      <Compile Include="Assets\Scripts\Shield.cs" />
