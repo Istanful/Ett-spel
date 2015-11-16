@@ -4,11 +4,11 @@ using System.Collections;
 
 public class GameController : MonoBehaviour
 {
-    public GameObject pointsText;
-	public int points = 0;
+	public static int points = 0;
 
     void Start()
     {
+        DontDestroyOnLoad(gameObject);
         Time.timeScale = 1;
     }
 
@@ -23,13 +23,21 @@ public class GameController : MonoBehaviour
         Application.LoadLevel(Application.loadedLevel);
     }
 
-	public void AddPoints (int newPoints)
+	public void AddPoints(int newPoints)
 	{
 		points += newPoints;
-        pointsText.GetComponent<Text>().text = "Points: " + points;
+        foreach (GameObject pointsText in GameObject.FindGameObjectsWithTag("PointTextUI"))
+            pointsText.GetComponent<Text>().text = "Points: " + points;
     }
 
-    public void PlayerDied ()
+    public void ResetPoints()
+	{
+		points = 0;
+        foreach (GameObject pointsText in GameObject.FindGameObjectsWithTag("PointTextUI"))
+            pointsText.GetComponent<Text>().text = "Points: " + points;
+    }
+
+    public void PlayerDied()
 	{
 
 	}

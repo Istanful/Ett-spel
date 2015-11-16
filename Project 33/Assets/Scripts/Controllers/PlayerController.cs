@@ -5,11 +5,13 @@ using System.Threading;
 
 public class PlayerController : MonoBehaviour
 {
-    public Abilities abilities;
+    public Abilities _abilities;
+    public static Abilities abilities;
 
     void Start ()
     {
-        InvokeRepeating("LowerCooldowns", 0, 0.1f);
+        InvokeRepeating("LowerCooldowns", 0, 0.01f);
+        abilities = _abilities;
     }
 
     void Update ()

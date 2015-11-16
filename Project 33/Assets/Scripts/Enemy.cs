@@ -5,7 +5,7 @@ public class Enemy : MonoBehaviour
 {
     public GameObject deathAnimationPrefab;
 	public float movementSpeed = 45;
-    public int health = 2;
+    public float health = 2;
     public int pointsWorth = 1;
 
     TextMesh healthText;
@@ -37,7 +37,7 @@ public class Enemy : MonoBehaviour
 			coll.gameObject.SendMessage ("Die");
 	}
 
-    void Damage(int damageTaken)
+    void Damage(float damageTaken)
     {
         health -= damageTaken;
         healthText.text = "Health: " + health;

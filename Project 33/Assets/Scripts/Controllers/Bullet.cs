@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Bullet : MonoBehaviour {
     public int bulletSpeed = 50;
-    public int bulletDamage = 1;
+    public float bulletDamage = 1;
     public GameObject hitAnimation;
     Vector3 bulletVelocity;
 
