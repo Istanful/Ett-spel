@@ -1,0 +1,5 @@
+Treant boss hurt01 = 0 0 86 69
+Treant boss hurt02 = 86 0 86 69
+Treant boss hurt03 = 172 0 86 69
+Treant boss hurt04 = 258 0 86 69
+Treant boss hurt05 = 344 0 86 69
