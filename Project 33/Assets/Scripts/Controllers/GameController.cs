@@ -7,6 +7,16 @@ public class GameController : MonoBehaviour
     public GameObject pointsText;
 	public int points = 0;
 
+    void Start()
+    {
+        Time.timeScale = 1;
+    }
+
+    public void GoToMainMenu()
+    {
+        Application.LoadLevel("Main Menu");
+    }
+
     public void RestartLevel()
     {
         Time.timeScale = 1;

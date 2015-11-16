@@ -7,12 +7,12 @@ public class PauseButton : MonoBehaviour {
     public Sprite resumeIcon;
 
     Image imageScript;
-    bool isPaused = true;
+    bool isPaused = false;
 
     void Start()
     {
         imageScript = GetComponent<Image>();
-        imageScript.sprite = resumeIcon;
+        imageScript.sprite = pauseIcon;
     }
 
     void OnApplicationFocus(bool focusStatus)
