@@ -23,7 +23,7 @@ public class GameController : MonoBehaviour
         Application.LoadLevel(Application.loadedLevel);
     }
 
-	public void AddPoints(int newPoints)
+    public void AddPoints(int newPoints)
 	{
 		points += newPoints;
         foreach (GameObject pointsText in GameObject.FindGameObjectsWithTag("PointTextUI"))

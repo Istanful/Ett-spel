@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 5df293a8cad17a541a03a92a59d2d202
-timeCreated: 1447784510
+timeCreated: 1447788261
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -67,7 +67,7 @@ TextureImporter:
         y: 0
         width: 141
         height: 37
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Waterfall 1_1
@@ -77,7 +77,7 @@ TextureImporter:
         y: 0
         width: 141
         height: 37
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Waterfall 1_2
@@ -87,7 +87,7 @@ TextureImporter:
         y: 0
         width: 141
         height: 37
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Waterfall 1_3
@@ -97,7 +97,7 @@ TextureImporter:
         y: 0
         width: 141
         height: 37
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Waterfall 1_4
@@ -107,7 +107,7 @@ TextureImporter:
         y: 0
         width: 141
         height: 37
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Waterfall 1_5
@@ -117,8 +117,8 @@ TextureImporter:
         y: 0
         width: 141
         height: 37
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Waterfall 1_6
       rect:
@@ -127,7 +127,7 @@ TextureImporter:
         y: 0
         width: 141
         height: 37
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Waterfall 1_7
@@ -137,8 +137,8 @@ TextureImporter:
         y: 0
         width: 141
         height: 37
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Waterfall 1_8
       rect:
@@ -147,8 +147,8 @@ TextureImporter:
         y: 0
         width: 141
         height: 37
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Waterfall 1_9
       rect:
@@ -157,8 +157,8 @@ TextureImporter:
         y: 0
         width: 141
         height: 37
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
