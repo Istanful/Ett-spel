@@ -45,7 +45,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\LoadLevel.cs" />
+     <Compile Include="Assets\LevelLoader.cs" />
+     <Compile Include="Assets\OffsetScroller.cs" />
+     <Compile Include="Assets\RestartButton.cs" />
      <Compile Include="Assets\Scripts\Controllers\Bullet.cs" />
      <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />
      <Compile Include="Assets\Scripts\Controllers\GameController.cs" />
@@ -54,21 +56,28 @@
      <Compile Include="Assets\Scripts\Controllers\SwipeController.cs" />
      <Compile Include="Assets\Scripts\Depression.cs" />
      <Compile Include="Assets\Scripts\DestroyAfterTime.cs" />
+     <Compile Include="Assets\Scripts\DestroyOutsideScreen.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\Melvin.cs" />
      <Compile Include="Assets\Scripts\PauseButton.cs" />
      <Compile Include="Assets\Scripts\PitchRandomizer.cs" />
      <Compile Include="Assets\Scripts\Shield.cs" />
+     <Compile Include="Assets\ScrollRectSnap.cs" />
      <None Include="Assets\Sprites\Combat\Shields\Down shield impact.txt" />
      <None Include="Assets\Sprites\Combat\M.E.L.V.I.N\Rocket launch.txt" />
+     <None Include="Assets\Sprites\Characters\Forest watcher\Forest watcher walk.txt" />
      <None Include="Assets\Sprites\Combat\Shields\Shields up.txt" />
+     <None Include="Assets\Sprites\Characters\Treant boss\Treant boss hurt.txt" />
      <None Include="Assets\Sprites\Combat\Shields\Up shield impact.txt" />
      <None Include="Assets\Sprites\Death animations\Standard body\Standard body death spritesheet.txt" />
      <None Include="Assets\Sprites\Combat\M.E.L.V.I.N\Rocket.txt" />
      <None Include="Assets\Sprites\Characters\Giant watcher\Giant watcher.txt" />
      <None Include="Assets\Sprites\Characters\Zombie\Zombie spritesheet.txt" />
+     <None Include="Assets\Sprites\Characters\Treant boss\Treant boss idle.txt" />
+     <None Include="Assets\Sprites\Death animations\Giant watcher\Giant watcher death.txt" />
      <None Include="Assets\Sprites\Impacts\Standard impact\Standard impact spritesheet.txt" />
+     <None Include="Assets\Sprites\Characters\Treant boss\Treant boss shoot crows.txt" />
      <None Include="Assets\Sprites\Combat\Health bars\Zombie health bar.txt" />
      <None Include="Assets\Font\ReadMe.txt" />
      <None Include="Assets\Sprites\Combat\M.E.L.V.I.N\Idle.txt" />
