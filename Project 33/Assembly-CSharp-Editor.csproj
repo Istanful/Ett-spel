@@ -57,8 +57,10 @@
      <None Include="Assets\Sprites\Characters\Giant watcher\Giant watcher.txt" />
      <None Include="Assets\Sprites\Characters\Zombie\Zombie spritesheet.txt" />
      <None Include="Assets\Sprites\Characters\Treant boss\Treant boss idle.txt" />
+     <None Include="Assets\Sprites\Scenery\Animations\Waterfall 1.txt" />
      <None Include="Assets\Sprites\Death animations\Giant watcher\Giant watcher death.txt" />
      <None Include="Assets\Sprites\Impacts\Standard impact\Standard impact spritesheet.txt" />
+     <None Include="Assets\Sprites\Characters\Treant boss\Big crow.txt" />
      <None Include="Assets\Sprites\Characters\Treant boss\Treant boss shoot crows.txt" />
      <None Include="Assets\Sprites\Combat\Health bars\Zombie health bar.txt" />
      <None Include="Assets\Font\ReadMe.txt" />
@@ -67,6 +69,9 @@
      <None Include="Assets\Sprites\Impacts\Rocket impact\Rocket impact.txt" />
      <None Include="Assets\Sprites\Combat\M.E.L.V.I.N\Shield up.txt" />
      <None Include="Assets\Sprites\Combat\Shields\Shields down.txt" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -81,6 +86,9 @@
  </Reference>
  <Reference Include="UnityEditor.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
