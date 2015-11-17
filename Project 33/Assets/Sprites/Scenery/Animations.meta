@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Project 33/Assets/Sprites/Scenery/Animations.meta
 guid: 902dd0526e95a0e4abd746cd9f3308ce
 folderAsset: yes
 timeCreated: 1447765379
+=======
+guid: 780f3f466d7ea174285c8f7c3576f81f
+folderAsset: yes
+timeCreated: 1447742729
+>>>>>>> origin/master:Project 33/Assets/Sprites/Scenery/Animations.meta
 licenseType: Free
 DefaultImporter:
   userData: 

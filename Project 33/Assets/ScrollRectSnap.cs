@@ -6,6 +6,7 @@ using System;
 public class ScrollRectSnap : MonoBehaviour
 {
     public bool loopPanels;
+    public float panelLerpStrength;
     public RectTransform scrollPanel;
     public RectTransform[] subPanel;
     public RectTransform centerMarker;
@@ -24,7 +25,7 @@ public class ScrollRectSnap : MonoBehaviour
         distReposition = new float[subPanelLength];
 
         subPanelDistance = (int)Mathf.Abs(subPanel[1].GetComponent<RectTransform>().anchoredPosition.x - subPanel[0].GetComponent<RectTransform>().anchoredPosition.x);
-      }
+    }
 
     void Update()
     {
@@ -33,6 +34,7 @@ public class ScrollRectSnap : MonoBehaviour
             distReposition[i] = centerMarker.GetComponent<RectTransform>().position.x - subPanel[i].transform.position.x;
             distance[i] = Mathf.Abs(distReposition[i]);
 
+            #region loopPanels
             if (loopPanels)
             {
 
@@ -54,6 +56,7 @@ public class ScrollRectSnap : MonoBehaviour
                     subPanel[i].GetComponent<RectTransform>().anchoredPosition = newAnchoredPosition;
                 }
             }
+            #endregion
             float minDistance = Mathf.Min(distance);
             for (int a = 0; a < subPanel.Length; a++)
             {
@@ -62,15 +65,15 @@ public class ScrollRectSnap : MonoBehaviour
             }
 
             if (!dragging)
-            {LerpToPanel(minSubPanelNum * -subPanelDistance);
-               //LerpToPanel(-subPanel[minSubPanelNum].GetComponent<RectTransform>().anchoredPosition.x);
+            {//LerpToPanel(minSubPanelNum * -subPanelDistance);
+                LerpToPanel(-subPanel[minSubPanelNum].GetComponent<RectTransform>().anchoredPosition.x);
             }
         }
     }
 
     void LerpToPanel(float position)
     {
-        float newX = Mathf.Lerp(scrollPanel.anchoredPosition.x, position, Time.deltaTime * 10f);
+        float newX = Mathf.Lerp(scrollPanel.anchoredPosition.x, position, Time.deltaTime * panelLerpStrength);
         Vector2 newPosition = new Vector2(newX, scrollPanel.anchoredPosition.y);
 
         scrollPanel.anchoredPosition = newPosition;
