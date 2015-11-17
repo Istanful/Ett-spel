@@ -68,8 +68,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\LoadLevel.cs" />
-    <Compile Include="Assets\MainMenuController.cs" />
+    <Compile Include="Assets\LevelLoader.cs" />
     <Compile Include="Assets\OffsetScroller.cs" />
     <Compile Include="Assets\RestartButton.cs" />
     <Compile Include="Assets\Scripts\Controllers\Bullet.cs" />
@@ -87,13 +86,17 @@
     <Compile Include="Assets\Scripts\PauseButton.cs" />
     <Compile Include="Assets\Scripts\PitchRandomizer.cs" />
     <Compile Include="Assets\Scripts\Shield.cs" />
+    <Compile Include="Assets\ScrollRectSnap.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Font\ReadMe.txt" />
+    <None Include="Assets\Sprites\Characters\Forest watcher\Forest watcher walk.txt" />
     <None Include="Assets\Sprites\Characters\Giant watcher\Giant watcher.txt" />
     <None Include="Assets\Sprites\Characters\Naked man\Spritesheet.txt" />
+    <None Include="Assets\Sprites\Characters\Treant boss\Big crow.txt" />
     <None Include="Assets\Sprites\Characters\Treant boss\Treant boss hurt.txt" />
     <None Include="Assets\Sprites\Characters\Treant boss\Treant boss idle.txt" />
+    <None Include="Assets\Sprites\Characters\Treant boss\Treant boss shoot crows.txt" />
     <None Include="Assets\Sprites\Characters\Zombie\Zombie spritesheet.txt" />
     <None Include="Assets\Sprites\Combat\Health bars\Zombie health bar.txt" />
     <None Include="Assets\Sprites\Combat\M.E.L.V.I.N\Idle.txt" />
@@ -108,6 +111,7 @@
     <None Include="Assets\Sprites\Death animations\Standard body\Standard body death spritesheet.txt" />
     <None Include="Assets\Sprites\Impacts\Rocket impact\Rocket impact.txt" />
     <None Include="Assets\Sprites\Impacts\Standard impact\Standard impact spritesheet.txt" />
+    <None Include="Assets\Sprites\Scenery\Animations\Waterfall 1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
