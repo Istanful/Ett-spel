@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     void OnBecameInvisible()
     {
         Camera.main.GetComponent<LevelCameraController>().BeginBlur();
+        GameObject.Find("ScoreboardPanel").GetComponent<Scoreboard>().ShowScoreboard("1-1", 14);
     }
 
     void Start ()

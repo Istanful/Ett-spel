@@ -1,13 +1,14 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class LevelController : MonoBehaviour
 {
-    [Header("Enviroment objects.")]
+    [Header("Enviroment objects")]
     public GameObject[] background;
     public GameObject[] scenery;
     public GameObject[] ground;
 
-    [Header("Enviroment scrolling speeds.")]
+    [Header("Enviroment scrolling speeds")]
     public int backgroundScrollingSpeed = 10;
     public int sceneryScrollingSpeed = 20;
     public int groundScrollingSpeed = 30;
@@ -17,6 +18,16 @@ public class LevelController : MonoBehaviour
     Vector3 backgroundScrollingVelocity;
     Vector3 sceneryScrollingVelocity;
     Vector3 groundScrollingVelocity;
+
+    internal void LevelEnd()
+    {
+        scrollingMultiplier = 0;
+
+        GameObject.Find("Player").GetComponent<Rigidbody2D>().velocity = Vector3.right * 25;
+        GameObject.Find("EnemySpawner").SetActive(false);
+        Camera.main.GetComponent<LevelCameraController>().followObject = null;
+        Debug.Log("Level Ended.");
+    }
 
     public void Update()
     {
