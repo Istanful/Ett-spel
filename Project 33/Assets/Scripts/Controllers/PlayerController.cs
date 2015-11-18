@@ -8,6 +8,11 @@ public class PlayerController : MonoBehaviour
     public Abilities _abilities;
     public static Abilities abilities;
 
+    void OnBecameInvisible()
+    {
+        Camera.main.GetComponent<LevelCameraController>().BeginBlur();
+    }
+
     void Start ()
     {
         InvokeRepeating("LowerCooldowns", 0, 0.01f);
