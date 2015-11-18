@@ -1,0 +1,9 @@
+Rube reflector reflect stance01 = 0 0 36 29
+Rube reflector reflect stance02 = 36 0 36 29
+Rube reflector reflect stance03 = 72 0 36 29
+Rube reflector reflect stance04 = 108 0 36 29
+Rube reflector reflect stance05 = 144 0 36 29
+Rube reflector reflect stance06 = 180 0 36 29
+Rube reflector reflect stance07 = 216 0 36 29
+Rube reflector reflect stance08 = 252 0 36 29
+Rube reflector reflect stance09 = 288 0 36 29
