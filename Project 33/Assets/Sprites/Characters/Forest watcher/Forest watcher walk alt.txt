@@ -1,0 +1,12 @@
+Forest watcher alt01 = 0 0 35 50
+Forest watcher alt02 = 35 0 35 50
+Forest watcher alt03 = 70 0 35 50
+Forest watcher alt04 = 105 0 35 50
+Forest watcher alt05 = 140 0 35 50
+Forest watcher alt06 = 175 0 35 50
+Forest watcher alt07 = 210 0 35 50
+Forest watcher alt08 = 245 0 35 50
+Forest watcher alt09 = 280 0 35 50
+Forest watcher alt10 = 315 0 35 50
+Forest watcher alt11 = 350 0 35 50
+Forest watcher alt12 = 385 0 35 50
