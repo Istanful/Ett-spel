@@ -36,7 +36,10 @@ public class LevelController : MonoBehaviour
         foreach (GameObject go in scenery)
             go.transform.position -= sceneryScrollingVelocity * Time.deltaTime * scrollingMultiplier;
         foreach (GameObject go in ground)
-            go.transform.position -= groundScrollingVelocity * Time.deltaTime * scrollingMultiplier;
+        {
+            if (go != null)
+                go.transform.position -= groundScrollingVelocity * Time.deltaTime * scrollingMultiplier;
+        }
     }
 
     void Start()
