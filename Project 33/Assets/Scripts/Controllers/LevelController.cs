@@ -1,8 +1,18 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LevelController : MonoBehaviour
 {
+    public static LevelController instance;
+
+    [Header("Level settings")]
+    public string levelName;
+
+    [Header("UI Objects")]
+    public Text pointsText;
+
+
     [Header("Enviroment objects")]
     public GameObject[] background;
     public GameObject[] scenery;
@@ -19,16 +29,6 @@ public class LevelController : MonoBehaviour
     Vector3 sceneryScrollingVelocity;
     Vector3 groundScrollingVelocity;
 
-    internal void LevelEnd()
-    {
-        scrollingMultiplier = 0;
-
-        GameObject.Find("Player").GetComponent<Rigidbody2D>().velocity = Vector3.right * 25;
-        GameObject.Find("EnemySpawner").SetActive(false);
-        Camera.main.GetComponent<LevelCameraController>().followObject = null;
-        Debug.Log("Level Ended.");
-    }
-
     public void Update()
     {
         foreach (GameObject go in background)
@@ -41,6 +41,8 @@ public class LevelController : MonoBehaviour
 
     void Start()
     {
+        instance = this;
+
         backgroundScrollingVelocity = new Vector3(backgroundScrollingSpeed, 0);
         sceneryScrollingVelocity = new Vector3(sceneryScrollingSpeed, 0);
         groundScrollingVelocity = new Vector3(groundScrollingSpeed, 0);

@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 public class EnemySpawner : MonoBehaviour
 {
+    public static EnemySpawner instance;
+
     public float randomTimeBetweenSpawns = 1;
     [SerializeField]
     public List<SpawnableEnemy> enemies;
@@ -12,6 +14,8 @@ public class EnemySpawner : MonoBehaviour
 
     void Start()
     {
+        instance = this;
+
         Vector3 newPosition = Camera.main.ScreenToWorldPoint(new Vector3(Camera.main.pixelWidth, 0));
         newPosition.y = 23;
         newPosition.z = 0;

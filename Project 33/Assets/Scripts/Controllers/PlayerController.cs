@@ -1,19 +1,11 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 using System.Collections;
-using System.Threading;
 
 public class PlayerController : MonoBehaviour
 {
     public Abilities _abilities;
     public static Abilities abilities;
-
-    void OnBecameInvisible()
-    {
-        Camera.main.GetComponent<LevelCameraController>().BeginBlur();
-        GameObject.Find("ScoreboardPanel").GetComponent<Scoreboard>().ShowScoreboard("1-1", 14);
-    }
-
+    
     void Start ()
     {
         InvokeRepeating("LowerCooldowns", 0, 0.01f);
@@ -23,12 +15,8 @@ public class PlayerController : MonoBehaviour
     void Update ()
 	{
         if (!UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject () && (Time.timeScale != 0))
-        {
             if (Input.touchCount > 0 || Input.GetMouseButton(0))
-            {
                 UseAbility(abilities.Basic);
-            }
-		}
 
         switch (SwipeController.swipeDirection)
         {
@@ -53,7 +41,7 @@ public class PlayerController : MonoBehaviour
 
     public void Die ()
     {
-        GameObject.Find("GameController").SendMessage("PlayerDied");
+        GameController.PlayerDied();
         Destroy(gameObject);
     }
 

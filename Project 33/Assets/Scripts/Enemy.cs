@@ -43,10 +43,15 @@ public class Enemy : MonoBehaviour
         healthText.text = "Health: " + health;
         if (health <= 0)
         {
-            GameObject.Find("GameController").SendMessage("AddPoints", pointsWorth);
-
-            Instantiate(deathAnimationPrefab, transform.position + (Vector3.left * 7), transform.rotation);
-            Destroy(gameObject);
+            Die();
         }
+    }
+
+    void Die()
+    {
+        GameController.AddPoints(pointsWorth); 
+
+        Instantiate(deathAnimationPrefab, transform.position + (Vector3.left * 7), transform.rotation);
+        Destroy(gameObject);
     }
 }

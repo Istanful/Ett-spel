@@ -4,6 +4,7 @@ using UnityStandardAssets.ImageEffects;
 
 public class LevelCameraController : MonoBehaviour
 {
+    public static LevelCameraController instance;
     BlurOptimized blur;
 
     [Header("Follow object")]
@@ -16,6 +17,11 @@ public class LevelCameraController : MonoBehaviour
     public float shiftBlurSize;
     public float maxBlurSize;
     public int maxBlurIterations;
+
+    void Start()
+    {
+        instance = this;
+    }
 
     void Update()
     {

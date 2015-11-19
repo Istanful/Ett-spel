@@ -4,10 +4,17 @@ using System.Collections;
 
 public class Scoreboard : MonoBehaviour
 {
+    public static Scoreboard instance;
+    void Start()
+    {
+        instance = this;
+    }
+
+
     [Header("Animation")]
     public float animationSpeed;
     public float animationMinDistance;
-    bool isAnimating = false;
+    public bool isAnimating = false;
 
     [Header("Text strings")]
     public string levelClearPrefix;
@@ -28,9 +35,12 @@ public class Scoreboard : MonoBehaviour
     {
         if (isAnimating)
         {
-            transform.position = Vector3.Lerp(transform.position, Vector3.zero, animationSpeed * Time.deltaTime);
-            if (Vector3.Distance(transform.position, Vector3.zero) < animationMinDistance)
+            transform.position = Vector3.Lerp(transform.position, transform.parent.position, animationSpeed * Time.deltaTime);
+            if (Vector3.Distance(transform.position, transform.parent.position) < animationMinDistance)
+            {
                 isAnimating = false;
+                Debug.Log("Finished moving Scoreboard to center");
+            }
         }
     }
 
@@ -39,5 +49,6 @@ public class Scoreboard : MonoBehaviour
         levelClearText.text = levelClearPrefix + levelName + levelClearSuffix;
         goldCollectedText.text = goldCollectedPrefix + goldCollected + goldCollectedSuffix;
         isAnimating = true;
+        Debug.Log("Begun moving Scoreboard to center");
     }
 }
