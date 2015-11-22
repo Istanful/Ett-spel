@@ -5,7 +5,6 @@ using System.Collections;
 [InitializeOnLoad]
 public static class LoadSceneOnPressingPlay
 {
-
     [SerializeField]
     public static string oldScene;
 
@@ -29,8 +28,15 @@ public static class LoadSceneOnPressingPlay
             {
                 //We're in playmode, right after having pressed Play
                 oldScene = EditorApplication.currentScene;
-                Debug.Log("Loading first level");
-                Application.LoadLevel(0);
+                if (Input.GetKey(KeyCode.LeftShift))
+                {
+                    Debug.Log("Left shift held, keeping current level loaded");
+                }
+                else
+                {
+                    Debug.Log("Loading first level");
+                    Application.LoadLevel(0);
+                }
             }
         }
     }

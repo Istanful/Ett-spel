@@ -6,6 +6,8 @@ public class EnemySpawner : MonoBehaviour
 {
     public static EnemySpawner instance;
 
+    public Vector3 enemySpawnPosition;
+
     public float randomTimeBetweenSpawns = 1;
     [SerializeField]
     public List<SpawnableEnemy> enemies;
@@ -36,7 +38,7 @@ public class EnemySpawner : MonoBehaviour
         int enemyIndex = Random.Range(0, enemies.Count);
         if (Random.Range(0, enemies[enemyIndex].rarity) == 0)
         {
-            Instantiate(enemies[enemyIndex].enemy, transform.position, transform.rotation);
+            Instantiate(enemies[enemyIndex].enemy, enemies[enemyIndex].enemy.transform.position + enemySpawnPosition, enemies[enemyIndex].enemy.transform.rotation);
             yield return new WaitForSeconds(Random.Range(0, randomTimeBetweenSpawns) + enemies[enemyIndex].delayAfterSpawn);
         }
         else

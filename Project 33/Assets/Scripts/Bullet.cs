@@ -5,15 +5,12 @@ public class Bullet : MonoBehaviour {
     public int bulletSpeed = 50;
     public float bulletDamage = 1;
     public GameObject hitAnimation;
-    Vector3 bulletVelocity;
-
+    
     void Start()
     {
-        bulletVelocity = new Vector3(bulletSpeed, 0);
-    }
-
-    void Update () {
-        transform.position += bulletVelocity * Time.deltaTime;
+        transform.position = GameObject.Find("AimAssist").transform.position;
+        transform.rotation = GameObject.Find("AimAssist").transform.rotation;
+        GetComponent<Rigidbody2D>().AddRelativeForce(new Vector3(bulletSpeed, 0), ForceMode2D.Impulse);
     }
 
     void OnBecameInvisible()
@@ -29,7 +26,6 @@ public class Bullet : MonoBehaviour {
                 coll.gameObject.SendMessage("Damage", bulletDamage);
 
             Instantiate(hitAnimation, transform.position, transform.rotation);
-            
             Destroy(gameObject);
         }
     }

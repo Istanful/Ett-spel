@@ -3,18 +3,20 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
+    public GameObject weapon;
+
     public Abilities _abilities;
     public static Abilities abilities;
-    
-    void Start ()
+
+    void Start()
     {
         InvokeRepeating("LowerCooldowns", 0, 0.01f);
         abilities = _abilities;
     }
 
-    void Update ()
-	{
-        if (!UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject () && (Time.timeScale != 0))
+    void Update()
+    {
+        if (!UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject() && (Time.timeScale != 0))
             if (Input.touchCount > 0 || Input.GetMouseButton(0))
                 UseAbility(abilities.Basic);
 
@@ -39,7 +41,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void Die ()
+    public void Die()
     {
         GameController.PlayerDied();
         Destroy(gameObject);

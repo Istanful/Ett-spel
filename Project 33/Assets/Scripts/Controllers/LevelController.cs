@@ -9,9 +9,12 @@ public class LevelController : MonoBehaviour
     [Header("Level settings")]
     public string levelName;
 
-    [Header("UI Objects")]
-    public Text pointsText;
+    [Header("Player")]
+    public GameObject player;
 
+    [Header("UI Objects")]
+    public GameObject UI;
+    internal Text pointsText;
 
     [Header("Enviroment objects")]
     public GameObject[] background;
@@ -45,6 +48,11 @@ public class LevelController : MonoBehaviour
     void Start()
     {
         instance = this;
+
+        UI = Instantiate(UI);
+        pointsText = UI.transform.Find("HUD").Find("PointsText").GetComponent<Text>();
+
+        player = (GameObject)Instantiate(player, player.transform.position, player.transform.rotation);
 
         backgroundScrollingVelocity = new Vector3(backgroundScrollingSpeed, 0);
         sceneryScrollingVelocity = new Vector3(sceneryScrollingSpeed, 0);
