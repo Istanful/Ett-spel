@@ -1,0 +1,8 @@
+Down shield hurt01 = 0 0 22 24
+Down shield hurt02 = 23 0 22 24
+Down shield hurt03 = 0 25 22 24
+Down shield hurt04 = 23 25 22 24
+Down shield hurt05 = 46 0 22 24
+Down shield hurt06 = 69 0 22 24
+Down shield hurt07 = 46 25 22 24
+Down shield hurt08 = 92 0 22 24

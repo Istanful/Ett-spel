@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 702abb32873c75349913b745674fdd4e
-timeCreated: 1447718922
+timeCreated: 1448885440
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -44,7 +44,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
-  compressionQuality: 50
+  compressionQuality: -1
   allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
@@ -52,7 +52,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 1
+  spritePixelsToUnits: 2
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
@@ -62,81 +62,81 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 22
-        width: 22
-        height: 22
+        y: 44
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Small buttons_1
       rect:
         serializedVersion: 2
-        x: 22
-        y: 22
-        width: 22
-        height: 22
+        x: 44
+        y: 44
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Small buttons_2
       rect:
         serializedVersion: 2
-        x: 44
-        y: 22
-        width: 22
-        height: 22
+        x: 88
+        y: 44
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Small buttons_3
       rect:
         serializedVersion: 2
-        x: 66
-        y: 22
-        width: 22
-        height: 22
+        x: 132
+        y: 44
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Small buttons_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 22
-        height: 22
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Small buttons_5
       rect:
         serializedVersion: 2
-        x: 22
+        x: 44
         y: 0
-        width: 22
-        height: 22
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Small buttons_6
       rect:
         serializedVersion: 2
-        x: 44
+        x: 88
         y: 0
-        width: 22
-        height: 22
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Small buttons_7
       rect:
         serializedVersion: 2
-        x: 66
+        x: 132
         y: 0
-        width: 22
-        height: 22
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

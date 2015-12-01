@@ -1,0 +1,6 @@
+Poro mask01 = 0 0 25 26
+Poro mask02 = 25 0 25 26
+Poro mask03 = 50 0 25 26
+Poro mask04 = 75 0 25 26
+Poro mask05 = 100 0 25 26
+Poro mask06 = 125 0 25 26

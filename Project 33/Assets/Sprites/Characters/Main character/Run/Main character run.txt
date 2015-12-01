@@ -1,0 +1,10 @@
+Running animation main char01 = 0 0 45 45
+Running animation main char02 = 45 0 45 45
+Running animation main char03 = 90 0 45 45
+Running animation main char04 = 135 0 45 45
+Running animation main char05 = 180 0 45 45
+Running animation main char06 = 225 0 45 45
+Running animation main char07 = 270 0 45 45
+Running animation main char08 = 315 0 45 45
+Running animation main char09 = 360 0 45 45
+Running animation main char10 = 405 0 45 45

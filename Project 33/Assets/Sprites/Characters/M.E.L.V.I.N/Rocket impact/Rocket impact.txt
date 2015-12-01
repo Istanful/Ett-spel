@@ -1,0 +1,7 @@
+Rocket impact01 = 0 0 12 12
+Rocket impact02 = 13 0 12 12
+Rocket impact03 = 0 13 12 12
+Rocket impact04 = 13 13 12 12
+Rocket impact05 = 26 0 12 12
+Rocket impact06 = 26 13 12 12
+Rocket impact07 = 39 0 12 12
