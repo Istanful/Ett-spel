@@ -1,8 +1,0 @@
-Heads artifact01 = 0 0 23 15
-Heads artifact02 = 23 0 23 15
-Heads artifact03 = 46 0 23 15
-Heads artifact04 = 69 0 23 15
-Heads artifact05 = 92 0 23 15
-Heads artifact06 = 115 0 23 15
-Heads artifact07 = 138 0 23 15
-Heads artifact08 = 161 0 23 15

@@ -1,8 +1,0 @@
-Melvin shield up01 = 0 0 10 10
-Melvin shield up02 = 11 0 10 10
-Melvin shield up03 = 0 11 10 10
-Melvin shield up04 = 11 11 10 10
-Melvin shield up05 = 22 0 10 10
-Melvin shield up06 = 22 11 10 10
-Melvin shield up07 = 33 0 10 10
-Melvin shield up08 = 44 0 10 10

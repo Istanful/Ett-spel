@@ -1,6 +1,0 @@
-Stone crawler hide01 = 0 0 16 9
-Stone crawler hide02 = 16 0 16 9
-Stone crawler hide03 = 32 0 16 9
-Stone crawler hide04 = 48 0 16 9
-Stone crawler hide05 = 64 0 16 9
-Stone crawler hide06 = 80 0 16 9

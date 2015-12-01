@@ -1,9 +1,0 @@
-Melvin animations01 = 0 0 10 20
-Melvin animations02 = 11 0 10 20
-Melvin animations03 = 22 0 10 20
-Melvin animations04 = 33 0 10 20
-Melvin animations05 = 44 0 10 20
-Melvin animations06 = 0 21 10 20
-Melvin animations07 = 11 21 10 20
-Melvin animations08 = 22 21 10 20
-Melvin animations09 = 33 21 10 20

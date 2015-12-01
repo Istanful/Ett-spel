@@ -1,6 +1,0 @@
-Rocket01 = 0 0 21 7
-Rocket02 = 0 8 21 7
-Rocket03 = 0 16 21 7
-Rocket04 = 22 0 21 7
-Rocket05 = 22 8 21 7
-Rocket06 = 22 16 21 7

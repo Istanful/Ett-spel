@@ -1,6 +1,0 @@
-Shield up01 = 0 0 22 24
-Shield up02 = 23 0 22 24
-Shield up03 = 0 25 22 24
-Shield up04 = 23 25 22 24
-Shield up05 = 46 0 22 24
-Shield up06 = 69 0 22 24
