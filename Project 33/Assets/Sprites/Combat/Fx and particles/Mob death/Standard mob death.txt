@@ -1,0 +1,12 @@
+Standard mob death01 = 0 0 32 32
+Standard mob death02 = 32 0 32 32
+Standard mob death03 = 64 0 32 32
+Standard mob death04 = 96 0 32 32
+Standard mob death05 = 128 0 32 32
+Standard mob death06 = 160 0 32 32
+Standard mob death07 = 192 0 32 32
+Standard mob death08 = 224 0 32 32
+Standard mob death09 = 256 0 32 32
+Standard mob death10 = 288 0 32 32
+Standard mob death11 = 320 0 32 32
+Standard mob death12 = 352 0 32 32
