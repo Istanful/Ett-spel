@@ -1,0 +1,6 @@
+Red mask imp01 = 0 0 25 26
+Red mask imp02 = 25 0 25 26
+Red mask imp03 = 50 0 25 26
+Red mask imp04 = 75 0 25 26
+Red mask imp05 = 100 0 25 26
+Red mask imp06 = 125 0 25 26

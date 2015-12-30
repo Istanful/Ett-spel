@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathAnimationPrefab: {fileID: 181922, guid: d94dd00b94d86b14892a5fde4061f068, type: 2}
-  movementSpeed: 20
+  movementSpeed: 25
   pointsWorth: 5
   healthBarStates:
   - {fileID: 21300000, guid: df61ea982cb90ed4c97553f928b958c7, type: 3}
@@ -191,7 +191,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: movementSpeed
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_LocalPosition.y
