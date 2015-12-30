@@ -1,14 +1,14 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour {
     public void LoadLevelSelect()
     {
-        Application.LoadLevel("Level Select");
+        SceneManager.LoadScene("Level Select");
     }
 
     public void LoadLevelFromName(string scene)
     {
-        Application.LoadLevel(scene);
+        SceneManager.LoadScene(scene);
     }
 }

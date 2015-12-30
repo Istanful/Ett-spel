@@ -1,0 +1,10 @@
+4 legged moss v301 = 0 0 56 43
+4 legged moss v302 = 56 0 56 43
+4 legged moss v303 = 112 0 56 43
+4 legged moss v304 = 168 0 56 43
+4 legged moss v305 = 224 0 56 43
+4 legged moss v306 = 280 0 56 43
+4 legged moss v307 = 336 0 56 43
+4 legged moss v308 = 392 0 56 43
+4 legged moss v309 = 448 0 56 43
+4 legged moss v310 = 504 0 56 43

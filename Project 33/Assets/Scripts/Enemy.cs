@@ -5,28 +5,50 @@ public class Enemy : MonoBehaviour
 {
     public GameObject deathAnimationPrefab;
 	public float movementSpeed = 45;
-    public float health = 2;
     public int pointsWorth = 1;
 
-    TextMesh healthText;
+    public Sprite[] healthBarStates;
+    public float maxHealth = 2;
+    public float healthBarYOffset = 2;
+    float currentHealth;
+    HealthBar healthBar;
 
     Rigidbody2D rb;
 
     void Start()
     {
-        rb = GetComponentInChildren<Rigidbody2D>();
-        healthText = GetComponentInChildren<TextMesh>();
-        healthText.text = "Health: " + health;
-        rb.velocity = Vector2.left * movementSpeed;
+        rb = GetComponent<Rigidbody2D>();
+
+        PolygonCollider2D polygonCollider = GetComponent<PolygonCollider2D>();
+
+        float minX = float.MaxValue;
+        float maxX = float.MinValue;
+        float maxY = float.MinValue;
+
+        foreach (Vector2 point in polygonCollider.points)
+        {
+            if (point.x < minX) minX = point.x;
+            if (point.x > maxX) maxX = point.x;
+            if (point.y > maxY) maxY = point.y;
+        }
+
+        GameObject healthBarObject = new GameObject();
+        healthBarObject.transform.parent = transform;
+        healthBar = healthBarObject.AddComponent<HealthBar>();
+        healthBar.transform.localPosition = new Vector2((maxX - minX)/2, maxY + healthBarYOffset);
+        healthBar.healthBarStates = healthBarStates;
+        healthBar.maxHealth = maxHealth;
+
+        currentHealth = maxHealth;
+
     }
 
 	void FixedUpdate ()
-	{
+    {
         if (rb.velocity.magnitude < movementSpeed)
             rb.AddForce(Vector2.left * (rb.mass/2), ForceMode2D.Impulse);
         else if (rb.velocity.magnitude > movementSpeed)
         {
-            Debug.Log("Movement speed exceeds maximum: " + rb.velocity.magnitude);
             rb.velocity = rb.velocity.normalized * movementSpeed;
         }
     }
@@ -39,12 +61,12 @@ public class Enemy : MonoBehaviour
 
     void Damage(float damageTaken)
     {
-        health -= damageTaken;
-        healthText.text = "Health: " + health;
-        if (health <= 0)
-        {
+        currentHealth -= damageTaken;
+
+        if (currentHealth <= 0)
             Die();
-        }
+        else
+            healthBar.currentHealth = currentHealth;
     }
 
     void Die()

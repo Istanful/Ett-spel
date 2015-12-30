@@ -1,0 +1,9 @@
+Handgun impact01 = 0 0 21 20
+Handgun impact02 = 21 0 21 20
+Handgun impact03 = 42 0 21 20
+Handgun impact04 = 63 0 21 20
+Handgun impact05 = 84 0 21 20
+Handgun impact06 = 105 0 21 20
+Handgun impact07 = 126 0 21 20
+Handgun impact08 = 147 0 21 20
+Handgun impact09 = 168 0 21 20

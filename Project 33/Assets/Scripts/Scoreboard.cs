@@ -10,7 +10,6 @@ public class Scoreboard : MonoBehaviour
         instance = this;
     }
 
-
     [Header("Animation")]
     public float animationSpeed;
     public float animationMinDistance;

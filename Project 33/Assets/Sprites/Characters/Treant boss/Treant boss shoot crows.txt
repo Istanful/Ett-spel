@@ -1,5 +1,0 @@
-Treant boss shoot crows01 = 0 0 86 69
-Treant boss shoot crows02 = 86 0 86 69
-Treant boss shoot crows03 = 172 0 86 69
-Treant boss shoot crows04 = 258 0 86 69
-Treant boss shoot crows05 = 344 0 86 69

@@ -4,7 +4,7 @@ using System.Collections;
 public class RestartButton : MonoBehaviour {
     public void Restart()
     {
-        GameController.ResetPoints();
+        GameController.Reset();
         GameController.GoToMainMenu();
     }
 }

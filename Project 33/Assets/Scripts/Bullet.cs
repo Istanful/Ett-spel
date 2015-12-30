@@ -4,6 +4,7 @@ using System.Collections;
 public class Bullet : MonoBehaviour {
     public int bulletSpeed = 50;
     public float bulletDamage = 1;
+    public bool transferMovementToHitAnimation = false;
     public GameObject hitAnimation;
     
     void Start()
@@ -25,7 +26,9 @@ public class Bullet : MonoBehaviour {
             if (coll.gameObject.tag == "Enemy")
                 coll.gameObject.SendMessage("Damage", bulletDamage);
 
-            Instantiate(hitAnimation, transform.position, transform.rotation);
+            GameObject hitAnim = (GameObject)Instantiate(hitAnimation, transform.position, transform.rotation);
+            if (transferMovementToHitAnimation) hitAnim.GetComponent<Rigidbody2D>().velocity = -coll.gameObject.GetComponent<Rigidbody2D>().velocity;
+
             Destroy(gameObject);
         }
     }

@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: 23b3cbdf0d89e6b4b8daf3a71e18103f
+timeCreated: 1451443740
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Handgun impact_0
+    21300002: Handgun impact_1
+    21300004: Handgun impact_2
+    21300006: Handgun impact_3
+    21300008: Handgun impact_4
+    21300010: Handgun impact_5
+    21300012: Handgun impact_6
+    21300014: Handgun impact_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: -1
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 2
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Handgun impact_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Handgun impact_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 0
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Handgun impact_2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Handgun impact_3
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Handgun impact_4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Handgun impact_5
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 0
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline:
+    - - {x: 94.5, y: 20}
+      - {x: 100.4337, y: 19.980267}
+      - {x: 106.343994, y: 19.921146}
+      - {x: 112.207535, y: 19.822872}
+      - {x: 118.0012, y: 19.685833}
+      - {x: 123.7021, y: 19.510567}
+      - {x: 129.28777, y: 19.297764}
+      - {x: 134.73615, y: 19.048271}
+      - {x: 140.02573, y: 18.763065}
+      - {x: 145.13564, y: 18.44328}
+      - {x: 150.04572, y: 18.09017}
+      - {x: 154.73657, y: 17.705132}
+      - {x: 159.18971, y: 17.289686}
+      - {x: 163.38754, y: 16.84547}
+      - {x: 167.3135, y: 16.374239}
+      - {x: 170.95212, y: 15.877851}
+      - {x: 174.289, y: 15.358267}
+      - {x: 177.31099, y: 14.817535}
+      - {x: 180.00616, y: 14.2577915}
+      - {x: 182.36389, y: 13.681244}
+      - {x: 184.37485, y: 13.090167}
+      - {x: 186.03111, y: 12.4868965}
+      - {x: 187.32614, y: 11.87381}
+      - {x: 188.25485, y: 11.253329}
+      - {x: 188.81352, y: 10.627901}
+      - {x: 189, y: 9.999996}
+      - {x: 188.81352, y: 9.37209}
+      - {x: 188.25484, y: 8.746663}
+      - {x: 187.32614, y: 8.126183}
+      - {x: 186.0311, y: 7.513096}
+      - {x: 184.37482, y: 6.909825}
+      - {x: 182.36386, y: 6.3187494}
+      - {x: 180.00613, y: 5.742202}
+      - {x: 177.31096, y: 5.182458}
+      - {x: 174.28896, y: 4.6417265}
+      - {x: 170.95206, y: 4.1221423}
+      - {x: 167.31346, y: 3.6257548}
+      - {x: 163.38748, y: 3.1545238}
+      - {x: 159.18965, y: 2.7103086}
+      - {x: 154.73651, y: 2.2948627}
+      - {x: 150.04564, y: 1.9098253}
+      - {x: 145.13556, y: 1.5567169}
+      - {x: 140.02565, y: 1.2369289}
+      - {x: 134.73607, y: 0.95172596}
+      - {x: 129.28769, y: 0.70223236}
+      - {x: 123.70203, y: 0.48943233}
+      - {x: 118.00111, y: 0.31416607}
+      - {x: 112.20744, y: 0.17712593}
+      - {x: 106.343895, y: 0.0788517}
+      - {x: 100.43361, y: 0.019732475}
+      - {x: 94.4999, y: 0}
+      - {x: 88.56619, y: 0.019733429}
+      - {x: 82.65591, y: 0.07885456}
+      - {x: 76.79236, y: 0.17712975}
+      - {x: 70.9987, y: 0.31417084}
+      - {x: 65.29779, y: 0.48943806}
+      - {x: 59.712124, y: 0.70223904}
+      - {x: 54.263752, y: 0.95173454}
+      - {x: 48.974174, y: 1.2369394}
+      - {x: 43.864265, y: 1.5567274}
+      - {x: 38.954193, y: 1.9098377}
+      - {x: 34.263336, y: 2.294876}
+      - {x: 29.810204, y: 2.7103229}
+      - {x: 25.612373, y: 3.154539}
+      - {x: 21.686424, y: 3.6257691}
+      - {x: 18.047829, y: 4.122157}
+      - {x: 14.710953, y: 4.641742}
+      - {x: 11.688965, y: 5.182474}
+      - {x: 8.99379, y: 5.7422185}
+      - {x: 6.636078, y: 6.3187666}
+      - {x: 4.625122, y: 6.9098425}
+      - {x: 2.9688644, y: 7.513114}
+      - {x: 1.6738281, y: 8.126201}
+      - {x: 0.7451401, y: 8.746681}
+      - {x: 0.18647003, y: 9.372108}
+      - {x: 0, y: 10.000014}
+      - {x: 0.18648529, y: 10.62792}
+      - {x: 0.7451782, y: 11.253347}
+      - {x: 1.6738815, y: 11.873828}
+      - {x: 2.968933, y: 12.486914}
+      - {x: 4.625206, y: 13.090185}
+      - {x: 6.636177, y: 13.68126}
+      - {x: 8.993912, y: 14.257808}
+      - {x: 11.689095, y: 14.817551}
+      - {x: 14.711098, y: 15.358282}
+      - {x: 18.047989, y: 15.877867}
+      - {x: 21.6866, y: 16.374252}
+      - {x: 25.61258, y: 16.845484}
+      - {x: 29.810417, y: 17.2897}
+      - {x: 34.26356, y: 17.705143}
+      - {x: 38.954433, y: 18.09018}
+      - {x: 43.864513, y: 18.44329}
+      - {x: 48.974434, y: 18.763077}
+      - {x: 54.26402, y: 19.048279}
+      - {x: 59.7124, y: 19.297771}
+      - {x: 65.29807, y: 19.51057}
+      - {x: 70.998985, y: 19.685837}
+      - {x: 76.79265, y: 19.822876}
+      - {x: 82.6562, y: 19.92115}
+      - {x: 88.56649, y: 19.980268}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

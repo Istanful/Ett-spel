@@ -36,7 +36,7 @@ public class EnemySpawner : MonoBehaviour
     IEnumerator SpawnEnemy()
     {
         int enemyIndex = Random.Range(0, enemies.Count);
-        if (Random.Range(0, enemies[enemyIndex].rarity) == 0)
+        if (Random.Range(0, enemies[enemyIndex].rarity + 1) == 0)
         {
             Instantiate(enemies[enemyIndex].enemy, enemies[enemyIndex].enemy.transform.position + enemySpawnPosition, enemies[enemyIndex].enemy.transform.rotation);
             yield return new WaitForSeconds(Random.Range(0, randomTimeBetweenSpawns) + enemies[enemyIndex].delayAfterSpawn);
