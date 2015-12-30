@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 40142d1a55a875c4a99c9619ff85eab3
-timeCreated: 1447594828
+timeCreated: 1451491976
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -24,7 +24,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -49,7 +49,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 2
   alphaIsTransparency: 1
@@ -61,72 +61,111 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
-        width: 1
-        height: 1
-      alignment: 6
+        y: 49
+        width: 46
+        height: 49
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 20.5}
+        - {x: -21, y: -3.5}
+        - {x: -7, y: -21.5}
+        - {x: 12, y: -21.5}
+        - {x: 21, y: -11.5}
+        - {x: 21, y: 14.5}
+        - {x: 8, y: 20.5}
     - name: Shields up_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 25
-        width: 22
-        height: 24
-      alignment: 6
+        x: 46
+        y: 49
+        width: 46
+        height: 49
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 20.5}
+        - {x: -21, y: -3.5}
+        - {x: -7, y: -21.5}
+        - {x: 12, y: -21.5}
+        - {x: 21, y: -11.5}
+        - {x: 21, y: 14.5}
+        - {x: 8, y: 20.5}
     - name: Shields up_2
       rect:
         serializedVersion: 2
-        x: 23
-        y: 25
-        width: 22
-        height: 24
-      alignment: 6
+        x: 92
+        y: 49
+        width: 46
+        height: 49
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 20.5}
+        - {x: -21, y: -3.5}
+        - {x: -7, y: -21.5}
+        - {x: 12, y: -21.5}
+        - {x: 21, y: -11.5}
+        - {x: 21, y: 14.5}
+        - {x: 8, y: 20.5}
     - name: Shields up_3
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 49
+        width: 46
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 20.5}
+        - {x: -21, y: -3.5}
+        - {x: -7, y: -21.5}
+        - {x: 12, y: -21.5}
+        - {x: 21, y: -11.5}
+        - {x: 21, y: 14.5}
+        - {x: 8, y: 20.5}
+    - name: Shields up_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 22
-        height: 24
-      alignment: 6
+        width: 46
+        height: 49
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Shields up_4
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 0
-        width: 22
-        height: 24
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 19.5}
+        - {x: -21, y: -6.5}
+        - {x: -9, y: -22.5}
+        - {x: 16, y: -22.5}
+        - {x: 21, y: -12.5}
+        - {x: 21, y: 16.5}
+        - {x: 12, y: 19.5}
     - name: Shields up_5
       rect:
         serializedVersion: 2
         x: 46
-        y: 25
-        width: 22
-        height: 24
-      alignment: 6
+        y: 0
+        width: 46
+        height: 49
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Shields up_6
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 25
-        width: 22
-        height: 24
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 19.5}
+        - {x: -21, y: -6.5}
+        - {x: -9, y: -22.5}
+        - {x: 16, y: -22.5}
+        - {x: 21, y: -12.5}
+        - {x: 21, y: 16.5}
+        - {x: 12, y: 19.5}
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
