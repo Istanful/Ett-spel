@@ -1,0 +1,2 @@
+optimal frame before up: 6
+Optimal frame after land: 2
